@@ -3,37 +3,67 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About My Favorite Things</title>
+    <title>My Favorite Things</title>
     <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <div class="container">
-        <h1>About My Favorite Things</h1>
+    <header>
+        <h1>My Favorite Things</h1>
+    </header>
 
-        <div class="section" onclick="toggleVisibility('foodDesc')">
-            <h2>🍽️ Favorite Food: Nasi Goreng</h2>
-            <div id="foodDesc" class="hidden">
-                <img src="nasi-goreng.jpg" alt="Nasi Goreng" class="food-img" />
-              <p>Nasi Goreng is a flavorful Indonesian fried rice dish made with soy sauce, garlic, shallots, and a variety of meats or vegetables. It's a beloved comfort food often topped with a fried egg.</p>
-            </div>
-          </div>
-          
+    <nav>
+        <ul>
+            <li><a href="#food">Food</a></li>
+            <li><a href="#movie">Movie</a></li>
+            <li><a href="#song">Song</a></li>
+        </ul>
+  </nav>
 
-    <div class="section" onclick="toggleVisibility('movieDesc')">
+  <main>
+    <section id="food" class="section" onclick="toggleVisibility('foodDesc')">
+      <h2>🍽️ Favorite Food: Nasi Goreng</h2>
+        <div id="foodDesc" class="hidden">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Nasi_Goreng_Special.jpg" alt="Nasi Goreng" class="item-img" />
+                <p>Nasi Goreng is a delicious Indonesian fried rice dish with a rich, savory flavor.</p>
+                    <ul>
+                        <li>It reminds me of home</li>
+                        <li>Quick and easy to make</li>
+                        <li>Perfect with a fried egg on top</li>
+                    </ul>
+        </div>
+    </section>
+
+    <section id="movie" class="section" onclick="toggleVisibility('movieDesc')">
         <h2>🎬 Favorite Movie: 500 Days of Summer</h2>
         <div id="movieDesc" class="hidden">
-            <p>A romantic dramedy that explores the highs and lows of a young man’s relationship through a non-linear narrative. It's emotional, quirky, and deeply relatable.</p>
             <iframe height="315" src="https://www.youtube.com/embed/PsD0NpFSADM" title="500 Days of Summer - Trailer" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
+            <p>A beautiful, emotional film that tells a love story in a non-linear way.</p>
+            <ul>
+                <li>Unique storytelling style</li>
+                <li>Relatable characters</li>
+                <li>Great soundtrack</li>
+            </ul>
+      </div>
+    </section>
 
-    <div class="section" onclick="toggleVisibility('songDesc')">
+    <section id="song" class="section" onclick="toggleVisibility('songDesc')">
         <h2>🎵 Favorite Song: Welcome to the Jungle</h2>
         <div id="songDesc" class="hidden">
-            <p>A high-energy rock anthem by Guns N' Roses that captures the chaotic spirit of city life and youth rebellion.</p>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0G21yYKMZoHa30cYVi1iA8?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>        </div>
-    </div>
-  </div>
+            <iframe src="https://open.spotify.com/embed/track/0HMsmW6XrbYgGvYpGvZlIU?utm_source=generator" height="80" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <p>A legendary rock anthem by Guns N’ Roses with intense energy and iconic guitar riffs.</p>
+            <ul>
+                <li>Packed with adrenaline</li>
+                <li>Great for workouts</li>
+                <li>Timeless classic</li>
+            </ul>
+      </div>
+    </section>
+  </main>
+
+<footer>
+    <p>Made with ❤️ for assignment — GitHub Pages Deployment</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
